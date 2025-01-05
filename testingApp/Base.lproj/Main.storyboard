@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AdA-6p-nxU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abdel" translatesAutoresizingMaskIntoConstraints="NO" id="PI4-KT-gdX">
-                                <rect key="frame" x="0.0" y="59" width="131" height="174"/>
+                                <rect key="frame" x="0.0" y="103" width="131" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="9Hx-Xl-qJk"/>
                                     <constraint firstAttribute="height" constant="174" id="Va4-84-Ndd"/>
@@ -29,26 +29,78 @@
                                     <constraint firstAttribute="height" constant="389" id="eAR-Ld-oTt"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Anime Fans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-zS-F08">
-                                <rect key="frame" x="76" y="300" width="264" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Anime Fans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-zS-F08">
+                                <rect key="frame" x="76" y="344" width="264" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cX-tb-4cO">
+                                <rect key="frame" x="218" y="118" width="159" height="38"/>
+                                <color key="tintColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to next view">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="AJD-BB-2IB" kind="show" id="hfq-OC-iBk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3cX-tb-4cO" secondAttribute="trailing" constant="16" id="0ta-tm-FdS"/>
+                            <constraint firstItem="IaM-zS-F08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="4nO-mf-bja"/>
                             <constraint firstItem="wq6-pJ-yFp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Jp-XG-7kM"/>
                             <constraint firstItem="wq6-pJ-yFp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Yz-yN-2ke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IaM-zS-F08" secondAttribute="trailing" constant="53" id="9bp-IF-IV1"/>
+                            <constraint firstItem="wq6-pJ-yFp" firstAttribute="top" secondItem="IaM-zS-F08" secondAttribute="bottom" constant="64" id="GD9-jK-p1y"/>
                             <constraint firstItem="PI4-KT-gdX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qnd-ym-UDh"/>
                             <constraint firstItem="PI4-KT-gdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X9n-wC-pXO"/>
                             <constraint firstItem="wq6-pJ-yFp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fSH-K9-FYS"/>
+                            <constraint firstItem="3cX-tb-4cO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="qdK-Yi-Dqe"/>
+                            <constraint firstItem="IaM-zS-F08" firstAttribute="top" secondItem="PI4-KT-gdX" secondAttribute="bottom" constant="67" id="zxx-KJ-UB6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EgN-aW-am9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="idM-eK-l3s">
+            <objects>
+                <viewController id="AJD-BB-2IB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIf-7Q-TRO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rfw-KD-9hr"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="1Ug-GI-Qww"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CX6-0V-S6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929.0076335877861" y="17.605633802816904"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TIg-8P-CdY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AdA-6p-nxU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8fM-qU-sUp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.14901961389999999" green="0.2588235438" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yk5-bC-WKk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJv-wH-csF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
@@ -58,6 +110,12 @@
         <image name="wp12224765-one-piece-mac-wallpapers" width="1920" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
